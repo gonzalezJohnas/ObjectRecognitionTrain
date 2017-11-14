@@ -33,7 +33,7 @@ You can have a deeper insight on the approach with this [paper](https://arxiv.or
 
 - NONE
 
-## How to used it ##
+## How to use it ##
 All the parameters are computed from the objectRecognitionTrain.ini file.
 
 The parameters are the one used in TensorFlow :
