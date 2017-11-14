@@ -10,12 +10,12 @@ This module was tested only on Linux machine and depends on the following :
 -	TensorFlow
 -	OpenCV
 
-Optionally a Cuda environement to launch on a GPU and accelerate the process.
+Optionally a Cuda environment to launch on a GPU and accelerate the process.
 
 ### General description ###
-As explained in the TensorFlow tutorial, reusing existing architecture for object recognition can de done by retraining the last layer. All the previous architecture remain identical, it can be seen as a generic features extractor. On this "feature code" we can retrain the output layer according to our needs.
+As explained in the TensorFlow tutorial, reusing existing architecture for object recognition can be done by retraining the last layer. All the previous architecture remain identical, it can be seen as a generic features extractor. On this "feature code" we can retrain the output layer according to our needs.
 
-So this module provide an Yarp rpc control to create the directory hierarchy in order to match the requirements to retrain the choosen architecture.
+So this module provide an Yarp rpc control to create the directory hierarchy in order to match the requirements to retrain the chosen architecture.
 
 You can have a deeper insight on the approach with this [paper](https://arxiv.org/pdf/1310.1531v1.pdf).
 
@@ -55,4 +55,4 @@ The parameters are the one used in TensorFlow :
 - **model_dir** => Where to find the model graph (default /tmp/imagenet, it will be automaticly download by the script if not found).
 
 ## Log and Debug ##
-By default all the summaries of the training rpocess are saved into **/tmp/retrain_logs**. With [tensorboard](https://www.tensorflow.org/get_started/summaries_and_tensorboard) you can visualize the differents metrics of the training process.
+By default all the summaries of the training rpocess are saved into **/tmp/retrain_logs**. With [tensorboard](https://www.tensorflow.org/get_started/summaries_and_tensorboard) you can visualize the different metrics of the training process.
