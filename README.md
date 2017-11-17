@@ -43,6 +43,7 @@ The parameters are the one used in TensorFlow :
 - **image_dir** => The directory where the dataset will be created
 - **output_graph** => Full path and name to save the new graph (ex /tmp/output_graph.pb)
 - **model_name** => Name of the architecture to use
+- **output_labels** => Full path and name to save the labels associted with the graph (ex /tmp/output_labels.txt)
 
 **Optional**
 
