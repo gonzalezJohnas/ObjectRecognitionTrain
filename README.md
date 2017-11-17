@@ -43,7 +43,7 @@ The parameters are the one used in TensorFlow :
 - **image_dir** => The directory where the dataset will be created
 - **output_graph** => Full path and name to save the new graph (ex /tmp/output_graph.pb)
 - **model_name** => Name of the architecture to use
-**Optional**
+- **Optional**
 
 - **architecture** => Which architecture to reuse (InceptionV3, MobileNet)
 - **learning_rate** => The increase in backprogation step for the weights
