@@ -36,6 +36,7 @@ private:
     const std::vector<std::string> mandatoryParameters {
             "image_dir",
             "output_graph",
+            "output_labels",
     };
 
 
