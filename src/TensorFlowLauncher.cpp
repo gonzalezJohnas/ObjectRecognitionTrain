@@ -58,6 +58,7 @@ bool TensorFlowLauncher::checkParameters() {
         }
 
         else{
+            cout << "Your forget to specify " <<  param << endl;
             return false;
         }
 
