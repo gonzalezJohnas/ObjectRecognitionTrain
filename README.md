@@ -49,11 +49,11 @@ The parameters are the one used in TensorFlow :
 
 - **architecture** => Which architecture to reuse (InceptionV3, MobileNet)
 - **learning_rate** => The increase in backprogation step for the weights
-- **how_ many_ training_steps** 
-- **random_brightness**
-- **random_scale**
-- **random_crop**
-- **flip_left_right**
+- **how_ many_ training_steps** => Specify number of training steps to perform
+- **random_brightness** => Specify with percentage values that control how much of each of the distortions is applied to each image
+- **random_scale** => Specify with percentage values that control how much of each of the distortions is applied to each image
+- **random_crop**  => Specify with percentage values that control how much of each of the distortions is applied to each image
+- **flip_left_right** => Boolean value to
 - **model_dir** => Where to find the model graph (default /tmp/imagenet, it will be automaticly download by the script if not found).
 
 ## Model_name possible values : 
