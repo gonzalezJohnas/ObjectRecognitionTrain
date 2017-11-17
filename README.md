@@ -53,7 +53,7 @@ The parameters are the one used in TensorFlow :
 - **random_brightness** => Specify with percentage values that control how much of each of the distortions is applied to each image
 - **random_scale** => Specify with percentage values that control how much of each of the distortions is applied to each image
 - **random_crop**  => Specify with percentage values that control how much of each of the distortions is applied to each image
-- **flip_left_right** => Boolean value to
+- **flip_left_right** => Flag to randomely flip the input images 
 - **model_dir** => Where to find the model graph (default /tmp/imagenet, it will be automaticly download by the script if not found).
 
 ## Model_name possible values : 
