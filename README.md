@@ -42,7 +42,7 @@ The parameters are the one used in TensorFlow :
 
 - **image_dir** => The directory where the dataset will be created
 - **output_graph** => Full path and name to save the new graph (ex /tmp/output_graph.pb)
-
+- **model_name** => Name of the architecture to use
 **Optional**
 
 - **architecture** => Which architecture to reuse (InceptionV3, MobileNet)
@@ -53,6 +53,14 @@ The parameters are the one used in TensorFlow :
 - **random_crop**
 - **flip_left_right**
 - **model_dir** => Where to find the model graph (default /tmp/imagenet, it will be automaticly download by the script if not found).
+
+## Model_name possible values : 
+To use the mobileNet architecture you have to specify it like this  **mobilenet_<number_weight>_<image_size>** where : 
+- number_weight can be in  {0.25|0.50|0.75|1}
+- image_size can be in {224|192|168|128}
+
+To use [inceptionV3](https://arxiv.org/abs/1512.00567) just write **inception_v3**
+
 
 ## Log and Debug ##
 By default all the summaries of the training rpocess are saved into **/tmp/retrain_logs**. With [tensorboard](https://www.tensorflow.org/get_started/summaries_and_tensorboard) you can visualize the different metrics of the training process.
