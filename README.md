@@ -50,19 +50,19 @@ The parameters are the one used in TensorFlow :
 - **architecture** => Which architecture to reuse (InceptionV3, MobileNet)
 - **learning_rate** => The increase in backprogation step for the weights
 - **how_ many_ training_steps** => Specify number of training steps to perform
-- **random_brightness** => Specify with percentage values that control how much of each of the distortions is applied to each image
-- **random_scale** => Specify with percentage values that control how much of each of the distortions is applied to each image
-- **random_crop**  => Specify with percentage values that control how much of each of the distortions is applied to each image
+- **random_brightness** => Specify with percentage values that control how much of each of the brightness is applied to each image
+- **random_scale** => Specify with percentage values that control how much of each of the scale is applied to each image
+- **random_crop**  => Specify with percentage values that control how much of each of the croping is applied to each image
 - **flip_left_right** => Flag to randomely flip the input images 
 - **model_dir** => Where to find the model graph (default /tmp/imagenet, it will be automaticly download by the script if not found).
 
 ## Model_name possible values : 
-To use the mobileNet architecture you have to specify it like this  **mobilenet_<number_weight>_<image_size>** where : 
-- number_weight can be in  {0.25|0.50|0.75|1}
+To use the mobileNet architecture you have to specify it like this  **mobilenet_<number_weights>_<image_size>** where : 
+- number_weights can be in  {0.25|0.50|0.75|1}
 - image_size can be in {224|192|168|128}
 
 To use [inceptionV3](https://arxiv.org/abs/1512.00567) just write **inception_v3**
 
 
 ## Log and Debug ##
-By default all the summaries of the training rpocess are saved into **/tmp/retrain_logs**. With [tensorboard](https://www.tensorflow.org/get_started/summaries_and_tensorboard) you can visualize the different metrics of the training process.
+By default all the summaries of the training process are saved into **/tmp/retrain_logs**. With [tensorboard](https://www.tensorflow.org/get_started/summaries_and_tensorboard) you can visualize the different metrics of the training process.
